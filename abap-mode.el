@@ -15,7 +15,7 @@
 
 (setq abap-types    '("C" "I" "F" "STRING" "X" ) )
 (setq abap-constants '("SPACE" "SY" ))
-(setq abap-events    '("START-OF-SELECTION" "AT SELECTION-SCREEN"))
+(setq abap-events    '("START-OF-SELECTION" "AT SELECTION-SCREEN" "END-OF-SELECTION"))
 (setq abap-functions '("STRLEN" "CONCATENATE" ))
 
 ;; Generate regex string for each category
