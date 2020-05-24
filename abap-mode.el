@@ -45,7 +45,8 @@
   (modify-syntax-entry ?*  "<")
   (modify-syntax-entry ?\n ">")
   ;; Code for syntax highlighting
-  (setq font-lock-defaults '((abap-font-lock-keywords))))
+  ;(setq font-lock-defaults '((abap-font-lock-keywords))))
+  (set (make-local-variable 'font-lock-defaults) '(abap-font-lock-keywords nil t)))
 
 ;; clear memory
 (setq abap-keywords nil)
@@ -66,4 +67,3 @@
 ;; Local Variables:
 ;; coding: utf-8
 ;; End:
-
