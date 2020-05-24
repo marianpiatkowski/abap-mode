@@ -10,8 +10,6 @@
 
 (setq abap-keywords-mayus '("REPORT" "DATA" "DATA:" "TYPE" "TYPES" "IF" "ELSE" "ENDIF" "LOOP" "TABLES" "AT" "BEGIN" "OF" "END" "ENDLOOP" "DO" "TIMES" "ENDDO" "PERFORM" "FORM" "APPEND" "CLEAR" "TO" "ENDFORM" "CALL" "FUNCTION" "EXPORTING" "EXCEPTIONS" "SELECT" "UP" "FROM" "INTO" "CORRESPONDING" "FIELDS" "TABLE" "GT" "LT" "EQ" "LE" "GE" "INSERT" "INTO" "MODIFY" "CASE" "WHEN" "USING" "LIKE" "CHANGING" "ENDCASE" "TYPE-POOLS" "ROWS" "INITIAL" "SIZE" "WITH" "HEADER" "LINE" "CONSTANTS" "VALUE" "OCCURS" "RANGES" "PARAMETERS" "SELECT-OPTIONS" "SELECTION-SCREEN" "SKIP" "CHECKBOX" "BLOCK" "COMMENT" "INITIALIZATION" "CONCATENATE" "REFRESH" "BEGIN_METHOD" "DATASET" "IMPORTING" "CHECK" "NOT" "DESCRIBE" "WRITE" "READ" "WHERE" "AND") )
 
-;;(setq abap-keywords (append 'abap-keywords-mayus (mapcar 'downcase 'abap-keywords-mayus)))
-
 (setq abap-keywords (append abap-keywords-mayus (mapcar 'downcase abap-keywords-mayus)))
 
 
@@ -21,11 +19,11 @@
 (setq abap-functions '("STRLEN" "CONCATENATE" ))
 
 ;; Generate regex string for each category
-(setq abap-keywords-regexp ( regexp-opt abap-keywords 'words))
-(setq abap-type-regexp     ( regexp-opt abap-types 'words))
-(setq abap-constants-regexp ( regexp-opt abap-constants 'words))
-(setq abap-event-regexp     ( regexp-opt abap-events    'words))
-(setq abap-functions-regexp ( regexp-opt abap-functions 'words))
+(setq abap-keywords-regexp ( regexp-opt abap-keywords 'symbols))
+(setq abap-type-regexp     ( regexp-opt abap-types 'symbols))
+(setq abap-constants-regexp ( regexp-opt abap-constants 'symbols))
+(setq abap-event-regexp     ( regexp-opt abap-events    'symbols))
+(setq abap-functions-regexp ( regexp-opt abap-functions 'symbols))
 
 ;; create the list for font-lock
 (setq abap-font-lock-keywords
@@ -68,4 +66,4 @@
 ;; Local Variables:
 ;; coding: utf-8
 ;; End:
-	
+
