@@ -1,5 +1,8 @@
 ;;; abap-mode.el -- ABAP Major Mode
 
+;; 2020 - @marianpiatkowski
+;;
+
 ;; 2015 - @hugo_dc
 ;; http://hugo-dc.com
 ;;
