@@ -16,8 +16,8 @@
 (setq abap-keywords (append abap-keywords-mayus (mapcar 'downcase abap-keywords-mayus)))
 
 
-(setq abap-types    '("C" "I" "F" "STRING" "X" ) )
-(setq abap-constants '("SPACE" "SY" ))
+(setq abap-types    '("C" "I" "F" "STRING" "X" "ABAP_BOOL" ) )
+(setq abap-constants '("SPACE" "SY" "ABAP_TRUE" "ABAP_FALSE" ))
 (setq abap-events    '("START-OF-SELECTION" "AT SELECTION-SCREEN" "END-OF-SELECTION"))
 (setq abap-functions '("STRLEN" "CONCATENATE" ))
 
